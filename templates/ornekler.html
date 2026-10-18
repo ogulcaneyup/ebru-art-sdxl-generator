@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebru AI - Galeri</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <header id="mainHeader">
+        <div class="logo">Ebru<span>.AI</span></div>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Anasayfa</a></li>
+                <li><a href="{{ url_for('nasil_calisir') }}">Nasıl Çalışır?</a></li>
+                <li><a href="{{ url_for('ornekler') }}" class="active">Galeri</a></li>
+                <li><a href="{{ url_for('proje_ekibi') }}">Hakkımızda</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <div style="max-width: 100%; overflow-x: hidden; padding-top: 60px;">
+        <h2 style="font-size: 3rem; font-weight: 900; text-align: center; margin-bottom: 10px;">Model <span class="gradient-text">Çıktıları</span></h2>
+        <p style="text-align: center; color: var(--text-muted); margin-bottom: 60px; font-size: 1.2rem;">Modelimizin ürettiği 1024x1024 boyutundaki eşsiz şaheserler.</p>
+        
+        <!-- YENİ KARE VE SONSUZ AKAN GALERİ -->
+        <div class="marquee-container">
+            <div class="marquee-track">
+                
+                <!-- ========================================== -->
+                <!-- 1. VAGON (Senin Eklediğin 8 Özgün Resim) -->
+                <!-- ========================================== -->
+                <div class="marquee-group">
+                    
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/gol.png') }}"  alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güneşin batışında turuncu ve mor bulutların yansıdığı dingin bir göl manzarası</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/nilufer.png') }}"  alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Nilüfer çiçekleriyle dolu bir gölet</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/selale.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Sarp kayalıkların üzerinden dökülen görkemli bir şelale</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/papatya.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güzel bir adet papatya ve arkaplanda zümrüt yeşili ebruli desenleri</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/manzara.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güneşin batışında turuncu ve mor bulutların yansıdığı dingin bir göl manzarası</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/nilufer2.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Yağmur damlalarının düştüğü nilüfer çiçekleriyle dolu bir gölet</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/mars.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Mars Gezegeni</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&h=1024&q=80" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Papatyalarla dolu bir kır tarlasının üzerinde uçuşan rengarenk kelebekler</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- ========================================== -->
+                <!-- 2. VAGON (Sonsuz Akış İçin Birebir Kopya) -->
+                <!-- ========================================== -->
+                <div class="marquee-group" aria-hidden="true">
+                    
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/gol.png') }}"  alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güneşin batışında turuncu ve mor bulutların yansıdığı dingin bir göl manzarası</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/nilufer.png') }}"  alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Nilüfer çiçekleriyle dolu bir gölet</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/selale.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Sarp kayalıkların üzerinden dökülen görkemli bir şelale</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/papatya.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güzel bir adet papatya ve arkaplanda zümrüt yeşili ebruli desenleri</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/manzara.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Güneşin batışında turuncu ve mor bulutların yansıdığı dingin bir göl manzarası</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/nilufer2.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Yağmur damlalarının düştüğü nilüfer çiçekleriyle dolu bir gölet</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="{{ url_for('static', filename='images/mars.png') }}" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Mars Gezegeni</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-card">
+                        <img src="https://images.unsplash.com/photo-1565153907400-7e01a9ab25f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1024&h=1024&q=80" alt="Ebru">
+                        <div class="prompt-overlay">
+                            <span class="prompt-label">Prompt</span>
+                            <p class="prompt-text">Papatyalarla dolu bir kır tarlasının üzerinde uçuşan rengarenk kelebekler</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 100px;">
+        <p>&copy; 2026 Ebru AI - TÜBİTAK Projesi - Tüm Hakları Saklıdır.</p>
+    </footer>
+
+</body>
+</html>
